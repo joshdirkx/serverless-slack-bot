@@ -5,7 +5,7 @@ import { ServerlessSlackBotStack } from '../lib/serverless-slack-bot-stack';
 
 const app = new App();
 
-new ServerlessSlackBotStack(app, 'SimpleMemeServiceStack', {
+new ServerlessSlackBotStack(app, 'ServerlessSlackBotStack', {
   env: {
     account: '245824979453',
     region: 'us-west-2',
