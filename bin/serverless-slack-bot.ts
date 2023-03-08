@@ -7,7 +7,7 @@ const app = new App();
 
 new ServerlessSlackBotStack(app, 'ServerlessSlackBotStack', {
   env: {
-    account: '245824979453',
-    region: 'us-west-2',
+    account: process.env.AWS_ACCOUNT_ID,
+    region: process.env.AWS_REGION,
   },
 });
